@@ -8,7 +8,7 @@ Person.prototype.greet = () =>{
 } 
 
 function Employee(name, age, jobTitle) {
-	person.call(this ,name , age);
+	Person.call(this ,name , age);
 	this.jobTitle = jobTitle;
 }
 
