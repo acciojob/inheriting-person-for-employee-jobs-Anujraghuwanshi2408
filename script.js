@@ -12,9 +12,9 @@ function Employee(name, age, jobTitle) {
 	Person.call(this ,name , age);
 	this.jobTitle = jobTitle;
 }
-Employee.prototype = Object.create(Person.prototype);
-Employee.prototype.constructor = Employee;
-// Employee.prototype.__proto__ = Person.prototype
+// Employee.prototype = Object.create(Person.prototype);
+// Employee.prototype.constructor = Employee;
+Employee.prototype.__proto__ = Person.prototype
 
 Employee.prototype.jobGreet = function(){
 	
