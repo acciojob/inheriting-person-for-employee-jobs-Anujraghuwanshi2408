@@ -4,7 +4,7 @@ function Person (name ,age){
 	this.age = age;
 	alert(name);
 }
-Person.prototype.greet = () =>{
+Person.prototype.greet = function(){
 	
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 } 
